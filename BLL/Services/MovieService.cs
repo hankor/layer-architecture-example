@@ -19,9 +19,9 @@ public class MovieService : IMovieService
         return _movieRepository.GetAll();
     }
 
-    public void Add(Movie p_movie)
+    public void Add(Movie movie)
     {
-        _movieRepository.Insert(p_movie);
+        _movieRepository.Insert(movie);
         _unitOfWork.SaveChanges();
     }
 }
